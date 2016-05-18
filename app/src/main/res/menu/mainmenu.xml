@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:id="@+id/action_wallpaper"
+        android:icon="@drawable/ic_wallpaper"
+        android:title="@string/wallpaper_bar_title"
+        app:showAsAction="ifRoom">
+    </item>-->
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/menu_title_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="collapseActionView|ifRoom">
+    </item>
+    <item android:id="@+id/action_store"
+        android:icon="@drawable/ic_store"
+        android:title="@string/menu_title_store"
+        android:showAsAction="collapseActionView|ifRoom">
+    </item>
+    <item android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/menu_title_settings"
+        android:showAsAction="collapseActionView|ifRoom">
+    </item>
+</menu>

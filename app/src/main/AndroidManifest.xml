@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beeselmane.simplehome">
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <application android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.beeselmane.simplehome.SHApplication">
+        <activity android:name=".DirectoryViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--<action android:name="android.intent.action.SEARCH" />-->
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable">
+            </meta-data>
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:label="@string/settings_title"
+            android:theme="@style/SettingsTheme"
+            android:parentActivityName=".DirectoryViewActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DirectoryViewActivity">
+            </meta-data>
+        </activity>
+        <activity android:name=".LauncherApplicationState$PackageStateChangedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

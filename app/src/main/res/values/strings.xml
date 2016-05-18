@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Simple Home</string>
+
+    <!-- Search Strings -->
+    <string name="search_hint">Search Applications&#8230;</string>
+
+    <!-- Launcher UI Strings -->
+    <string name="root_directory_name">Applications</string>
+    <string name="default_icon_content_description">Application Name</string>
+    <string name="directory_subtext_format_string">%d Items</string>
+    <string name="menu_title_search">Search Applications</string>
+    <string name="menu_title_store">Open Store</string>
+    <string name="menu_title_settings">Settings</string>
+
+    <!-- Settings Strings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_dark_mode_primary">Use Dark Mode</string>
+    <string name="settings_dark_mode_secondary">For Light Wallpapers</string>
+    <string name="settings_set_wallpaper">Set Device Wallpaper</string>
+    <string name="settings_select_wallpaper">Select New Wallpaper</string>
+    <string name="settings_wallpaper_success">Successfully Changed Wallpaper!</string>
+    <string name="settings_wallpaper_failure">Error Setting Wallpaper!</string>
+    <string name="settings_wallpaper_cancel">Cancelled Setting Wallpaper</string>
+    <string name="settings_ignore_case_primary">Ignore Search Case</string>
+    <string name="settings_ignore_case_secondary">Ignore Case when Searching for Applications</string>
+    <string name="settings_open_system_settings">Open System Settings</string>
+
+    <!-- Preference Keys -->
+    <string name="key_dark_mode">KeyUseDarkMode</string>
+    <string name="key_ignore_case">KeyIgnoreSearchCase</string>
+    <string name="key_set_wallpaper">KeySetWallpaper</string>
+    <string name="key_open_system">KeyOpenSystemSettings</string>
+
+    <!-- Other Strings -->
+    <string name="store_package">com.android.vending</string>
+</resources>

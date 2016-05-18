@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="@string/settings_dark_mode_primary"
+        android:defaultValue="false"
+        android:summary="@string/settings_dark_mode_secondary"
+        android:key="@string/key_dark_mode">
+    </CheckBoxPreference>
+    <CheckBoxPreference
+        android:title="@string/settings_ignore_case_primary"
+        android:defaultValue="true"
+        android:summary="@string/settings_ignore_case_secondary"
+        android:key="@string/key_ignore_case">
+    </CheckBoxPreference>
+    <Preference android:title="@string/settings_set_wallpaper"
+        android:key="@string/key_set_wallpaper">
+    </Preference>
+    <Preference android:title="@string/settings_open_system_settings"
+        android:key="@string/key_open_system">
+    </Preference>
+</PreferenceScreen>
